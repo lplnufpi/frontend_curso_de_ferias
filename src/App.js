@@ -1,25 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div class="gameboy">
+    <div class="screen-cont">
+      <div class="power"></div>
+      <div class="screen">
+        <div class="header">Processamento de linguagem Natural</div>
+        <div class="animated-text">PROCESSAMENTO DE LINGUAGEM NATURAL<div class="copy">®</div>
+        </div>
+      </div>
     </div>
+    <div class="controls-cont">
+      <div class="btn-direction">
+        <div class="vertical"></div>
+        <div class="horizontal"></div>
+      </div>
+      <div class="btn-AB"></div>
+    </div>
+  </div>
   );
 }
 
