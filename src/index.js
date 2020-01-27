@@ -1,16 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import AnalisarTexto from './AnalisarTexto'
+import './styles/index.css';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
+
+import App from './components/App';
+import AnalisarTexto from './components/AnalisarTexto'
+import IncrementarCorpus from './components/IncrementarCorpus'
 
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Route path="/" exact={true} component={App} />
       <Route path="/analisar_texto" component={AnalisarTexto} />
+      <Route path="/incrementar_corpus" component={IncrementarCorpus} />
     </Switch>
   </BrowserRouter>
   , document.getElementById('root'));

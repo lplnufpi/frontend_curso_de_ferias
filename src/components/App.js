@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import '../styles/App.css';
 
 import ItemAcao from './ItemAcao'
 
@@ -10,9 +10,9 @@ function App() {
         <div className="screen">
           <div className="header">Processamento de linguagem Natural</div>
           <div className="animated-text">PLN<div className="copy"></div>
-            <ItemAcao title="Analizar Texto" />
-            <ItemAcao title="Cadastrar Categoria" />
-            <ItemAcao title="Incrementar Corpus" />
+            <ItemAcao title="Analizar Texto" route="/analisar_texto" />
+            <ItemAcao title="Cadastrar Categoria" route="/cadastrar_categoria" />
+            <ItemAcao title="Incrementar Corpus" route="/incrementar_corpus" />
           </div>
         </div>
       </div>
@@ -21,7 +21,7 @@ function App() {
           <div className="vertical"></div>
           <div className="horizontal"></div>
         </div>
-        <div className="btn-AB"></div>
+        <div className="btn-AB">  </div>
       </div>
     </div>
 
