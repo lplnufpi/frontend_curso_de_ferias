@@ -17,6 +17,11 @@ input.btn-off {
 input.btn-hide {
   display: none;
 }
+
+.item-acao {
+  padding: 5px;
+}
+
 .gameboy {
   position: relative;
   display: block;
@@ -102,9 +107,9 @@ input.btn-hide {
   display: inline;
   position: relative;
   top: -26px;
-  left: 30%;
+  left: 10%;
   color: #8a891f;
-  font-size: 17px;
+  font-size: 14px;
   font-family: "Pretendo";
   z-index: 10;
 }

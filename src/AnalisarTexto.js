@@ -1,18 +1,18 @@
 import React from 'react';
 import './App.css';
 
-import ItemAcao from './ItemAcao'
-
-function App() {
+function AnalisarTexto() {
   return (
     <div className="gameboy">
       <div className="screen-cont">
         <div className="screen">
           <div className="header">Processamento de linguagem Natural</div>
           <div className="animated-text">PLN<div className="copy"></div>
-            <ItemAcao title="Analizar Texto" />
-            <ItemAcao title="Cadastrar Categoria" />
-            <ItemAcao title="Incrementar Corpus" />
+            <form className="form-analise">
+              <textarea rows="10" placeholder="Cole aqui o texto que você deseja analisar"></textarea>
+              <br/>
+              <input type='submit'></input>
+            </form>
           </div>
         </div>
       </div>
@@ -24,8 +24,7 @@ function App() {
         <div className="btn-AB"></div>
       </div>
     </div>
-
   );
 }
 
-export default App;
+export default AnalisarTexto;
